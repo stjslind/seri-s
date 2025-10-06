@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Jonas Lindt - Profil</title>
     <style>
-        body {
+        body 
+        {
             font-family: Arial, sans-serif;
             background: #fafafa;
             margin: 0;
@@ -43,9 +44,56 @@
         a:hover {
             text-decoration: underline;
         }
+        .red-text {
+            color: #e53935;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 1.5em;
+        }
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-image: url('https://th.bing.com/th/id/OIP._SvPOTOk_JxRIHhGJFpKdwHaE8?w=285&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
     </style>
 </head>
 <body>
+<nav style="background:#222; padding: 10px 0; text-align:center;">
+  <a href="#" id="kircheBtn" style="color:white; text-decoration:none; margin:0 20px;">Kirsche</a>
+  <a href="#" id="birneBtn" style="color:white; text-decoration:none; margin:0 20px;">Birne</a>
+  <a href="#" id="nebenwirkungenBtn" style="color:white; text-decoration:none; margin:0 20px;">Nebenwirkungen</a>
+</nav>
+
+<div id="bildbereich" style="text-align:center; margin-top:2em;"></div>
+
+<script>
+document.getElementById('kircheBtn').onclick = function(e) {
+  e.preventDefault();
+  document.getElementById('bildbereich').innerHTML = `
+    <a href="https://snuzone.com/products/pablo-exclusive-cherry-cola" target="_blank">
+      <img src="https://th.bing.com/th/id/OIP.thCcqpAZUp6kL82uB35hLwHaGk?w=222&h=198&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Kirsche" />
+    </a>
+  `;
+};
+document.getElementById('birneBtn').onclick = function(e) {
+  e.preventDefault();
+  document.getElementById('bildbereich').innerHTML = `
+    <a href="https://www.snussie.com/de/pablo-exclusive-pear.html" target="_blank">
+      <img src="data:image/webp;base64,UklGRr4RAABXRUJQVlA4ILIRAAAQSQCdASrGAMoAPp1GnEolo6KhqxYaqLATiU3bq8pWIhrOfpJbG/tuMyed6e/MA58nmM84n07egf+2/XC+g75c/tDf361lGr3qnpfe3vcb+h3TPZj/GZj0RDky/ZVDHksno//by[...]
+    </a>
+  `;
+};
+document.getElementById('nebenwirkungenBtn').onclick = function(e) {
+  e.preventDefault();
+  document.getElementById('bildbereich').innerHTML = `<div class="red-text">siehe Spucki</div>`;
+};
+</script>
+   
     <div class="container">
         <h1>Jonas Lindt</h1>
         <div class="info">
@@ -59,7 +107,7 @@
     </div>
     <footer style="text-align:center; margin-top:2em;">
     <a href="https://snuzone.com/pages/snuzone-rabattcode">
-        <img src="https://th.bing.com/th/id/OIP.HLKeOArSIuuypGpVOyNUCgHaHa?w=209&h=209&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Snuzone Rabattcode" />
+        <img src="https://th.bing.com/th/id/OIP.h5jLPHIZFKxg27MHBSNv6gHaHa?w=189&h=189&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Snuzone Rabattcode" />
     </a>
 </footer>
 </body>
